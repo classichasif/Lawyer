@@ -1,0 +1,46 @@
+
+/* 576 */ 
+@media(min-width: 576px){}
+/* 768 */
+@media(min-width: 767px){
+    .section_padding{
+        padding: 40px 0px;
+    }
+
+    .header_logo{
+        width: 80px;
+    }  
+    
+    .baner_content_title {
+        font-size: 36px;
+        line-height: 50px;
+    }
+
+    .about_title {
+        font-size: 30px;
+        line-height: 46px;
+    }
+}
+/* 1024 */
+@media(min-width: 992px){
+    .section_padding{
+        padding: 50px 0px;
+    }
+
+    .baner_content_title {
+        font-size: 54px;
+        line-height: 70px;
+    }
+}
+/* 1240 */
+@media(min-width: 1200px){
+    .section_padding{
+        padding: 60px 0px;
+    }
+
+    .right-content-testimonial {
+        padding-left: 118px;
+    }
+}
+
+@media(max-width: 991px){}

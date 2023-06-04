@@ -1,0 +1,155 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+hr {
+    margin: 0px;
+    padding: 0px;
+}
+
+.section_padding{
+    padding: 30px 0px;
+}
+
+:root{
+    --primary-color: #FFB21D;
+    --main-color: #3f4ad0;
+    --low-bg: rgba(9, 137, 255, 0.06);
+    --bg-color: #f5f8fe;
+    --text-color: #000000;
+    --border-color: #EAEBED;
+    --transition: all linear 0.3s;
+    --global-color: #FFFFFF;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+.input_control{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.global_btn{
+    background: transparent;
+    outline: none;
+    border: none;
+}
+
+.form-select:focus,
+.form-control:focus{
+    box-shadow: none;
+    border: none;
+}
+
+.nav_icon {
+    position: relative;
+    height: 14px;
+}
+    
+.nav_icon ul {
+    position: relative;
+    height: 12px;
+    width: 22px;
+}
+
+.nav_icon ul li{
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: var(--text-color);
+    left: 0px;
+    transition: var(--transition);
+}
+
+.nav_icon ul li:first-child{
+    top: 0px;
+}
+
+.nav_icon ul li:nth-child(2){
+    top: 50%;
+}
+
+.nav_icon ul li:last-child{
+    top: 98%;
+}
+
+.activenav_icon ul li:first-child{
+    top: 50%;
+    transform: rotate(-45deg);
+}
+
+.activenav_icon ul li:nth-child(2){
+    visibility: hidden;
+    opacity: 0;
+}
+
+.activenav_icon ul li:last-child{
+    top: 50%;
+    transform: rotate(45deg);
+}
+
+/* section title */
+
+.section_title{
+    position: relative;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.sectitle_heading{
+    position: relative;
+    font-size: 36px;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.sectitle_heading::after{
+    position: absolute;
+    content: "";
+    height: 4px;
+    width: 20%;
+    background: var(--main-color);
+    left: 0px;
+    bottom: 0px;
+    border-radius: 5px;
+}
+
+.rotate180{
+    transform: rotate(180deg);
+}
+
+.fa-solid, .fas {
+    font-weight: 500;
+}
+
+.main_btn {
+    padding: 9px 25px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+}
+
+.form-select:focus, .form-control:focus {
+    box-shadow: none;
+    border: 1px solid var(--main-color);
+}
