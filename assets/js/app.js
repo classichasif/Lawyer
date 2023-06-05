@@ -19,17 +19,33 @@ window.addEventListener("click", function(event) {
   }
 });
 
+// sticky menu
+var header = document.getElementsByClassName("main_header")[0];
+var sticky = header.offsetTop + 200;
+
+
+window.addEventListener('scroll', function () {
+    if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+    } else {
+        header.classList.remove("sticky");
+    }
+})
+
 // banner slider
-$('.banner_slider').slick({
-    lazyLoad: 'ondemand',
-    dots: false,
-    infinite: true,
-    speed: 500,
-    fade: true,
-    cssEase: 'linear',
-    arrows: false,
-    autoplay: true
-});
+$(function (e){
+  e('.banner_slider').slick({
+      lazyLoad: 'ondemand',
+      dots: true,
+      infinite: true,
+      speed: 500,
+      fade: true,
+      cssEase: 'linear',
+      arrows: false,
+      autoplay: true,
+      appendDots: e(".slider_dots"),
+  });
+})
 
 $(function (e) {
   "use strict";

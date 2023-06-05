@@ -20,6 +20,20 @@
         font-size: 30px;
         line-height: 46px;
     }
+
+    .main{
+        margin-top: 165px;
+    }
+
+    .banner_section .slick-dots li{
+        width: 42px;
+        height: 42px;
+    }
+    
+    .banner_section .slick-dots li button{
+        font-size: 20px;
+    }
+    
 }
 /* 1024 */
 @media(min-width: 992px){

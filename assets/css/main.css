@@ -4,6 +4,28 @@
     padding: 12px 0px;
 }
 
+.header_section {
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    background: var(--global-color);
+    top: 0px;
+    left: 0px;
+}
+
+.sticky {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    transition: all .3s ease-in-out;
+    background-color: #fff;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+}
+
+.main{
+    margin-top: 145px;
+}
+
 .header_contact ul li a {
     color: var(--global-color);
     font-weight: 300;
@@ -20,6 +42,7 @@
 
 .main_header {
     padding: 10px 0px;
+    transition: var(--transition);
 }
 
 .header_logo {
@@ -49,6 +72,33 @@
 }
 
 /* banner item */
+
+.banner_section{
+    position: relative;
+}
+
+.slider_dots{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.banner_section .slick-dots li{
+    width: 36px;
+    border-radius: 50%;
+    height: 36px;
+    display: grid;
+    place-content: center;
+}
+
+.banner_section .slick-dots li button{
+    text-indent: unset;
+    display: block;
+    position: unset;
+    color: var(--global-color);
+    font-size: 18px;
+}
+
 
 .banner_slider_item {
     min-height: calc(100vh - 261px) !important;
