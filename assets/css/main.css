@@ -99,6 +99,12 @@
     font-size: 18px;
 }
 
+.login_thumb img{
+    width: auto !important;
+    max-width: 100%;
+    margin-left: auto;
+}
+
 
 .banner_slider_item {
     min-height: calc(100vh - 261px) !important;
@@ -820,11 +826,11 @@
 
 .inner_banner{
     background: var(--bg-color);
+    padding: 40px 0px;
 }
 
 .inner_banner_content h1{
     font-size: 36px;
-    margin-bottom: 5px;
     color: var(--main-color);
 }
 
